@@ -1,0 +1,438 @@
+/* CSS Document */
+
+
+/* ------------------------------------------ */
+/*             TABLE OF CONTENTS
+/* ------------------------------------------ */
+/*   01 - General & Basic Styles  */
+
+
+/*******************************************************************
+       start general
+*********************************************************************/
+
+.no-padding {padding: 0;}
+.no-margin {margin: 0;}
+
+.no-margin-top {margin-top:0;}
+.no-margin-bottom {margin-bottom:0;}
+.no-margin-right {margin-right:0;}
+.no-margin-left {margin-left:0;}
+
+.no-padding-top {padding-top:0;}
+.no-padding-bottom {padding-bottom:0;}
+.no-padding-right {padding-right:0;}
+.no-padding-left {padding-left:0;}
+
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+
+.float-left { float: left; }
+.float-right { float: right; }
+
+.margin-top-5 { margin-top: 5px; }
+.margin-top-10 { margin-top: 10px; }
+.margin-top-15 { margin-top: 15px; }
+.margin-top-20 { margin-top: 20px; }
+.margin-top-25 { margin-top: 25px; }
+.margin-top-30 { margin-top: 30px; }
+.margin-top-35 { margin-top: 35px; }
+.margin-top-40 { margin-top: 40px; }
+.margin-top-45 { margin-top: 45px; }
+.margin-top-50 { margin-top: 50px; }
+
+.margin-bottom-5 { margin-bottom: 5px; }
+.margin-bottom-10 { margin-bottom: 10px; }
+.margin-bottom-15 { margin-bottom: 15px; }
+.margin-bottom-20 { margin-bottom: 20px; }
+.margin-bottom-25 { margin-bottom: 25px; }
+.margin-bottom-30 { margin-bottom: 30px; }
+.margin-bottom-35 { margin-bottom: 35px; }
+.margin-bottom-40 { margin-bottom: 40px; }
+.margin-bottom-45 { margin-bottom: 45px; }
+.margin-bottom-50 { margin-bottom: 50px; }
+
+.padding-top-5 { padding-top: 5px; }
+.padding-top-10 { padding-top: 10px; }
+.padding-top-15 { padding-top: 15px; }
+.padding-top-20 { padding-top: 20px; }
+.padding-top-25 { padding-top: 25px; }
+.padding-top-30 { padding-top: 30px; }
+.padding-top-35 { padding-top: 35px; }
+.padding-top-40 { padding-top: 40px; }
+.padding-top-45 { padding-top: 45px; }
+.padding-top-50 { padding-top: 50px; }
+
+.padding-bottom-5 { padding-bottom: 5px; }
+.padding-bottom-10 { padding-bottom: 10px; }
+.padding-bottom-15 { padding-bottom: 15px; }
+.padding-bottom-20 { padding-bottom: 20px; }
+.padding-bottom-25 { padding-bottom: 25px; }
+.padding-bottom-30 { padding-bottom: 30px; }
+.padding-bottom-35 { padding-bottom: 35px; }
+.padding-bottom-40 { padding-bottom: 40px; }
+.padding-bottom-45 { padding-bottom: 45px; }
+.padding-bottom-50 { padding-bottom: 50px; }
+
+/*******************************************************************
+       end general
+*********************************************************************/
+
+/*******************************************************************
+       start header
+*********************************************************************/
+
+
+#top-header{
+    background-color: #fff;
+    margin-bottom: 30px;
+    position: relative;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+
+.logo{
+    float: left;
+    padding: 30px 30px 15px;
+    background-color: transparent;
+}
+
+
+.logo h2,.logo h2 a{
+    font-size: 18px;
+    letter-spacing: 7px;
+    color: #FFFFFF;
+    text-transform: uppercase
+}
+
+
+@media screen and (max-width: 768px) {
+    .logo h2,.logo h2 a img {
+        width: 140px;
+        height: 40px;
+    }
+}
+.logo h2,.logo h2 a img{
+    width: 150px;
+    height: 40px;
+}
+
+#btn-menu{
+    float: right;
+    margin-top: 30px;
+    font-size: 20px;
+    display: none;
+    margin-right: 30px;
+    cursor: pointer;
+    background: #232323;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+}
+
+#main-nav{
+    float: right;
+    margin-top: 29px;
+}
+
+#main-nav > ul > li{
+    float: left;
+    position: relative;
+    padding: 12px 25px;
+
+}
+
+#main-nav >  ul > li > a{
+    display: block;
+    position: relative;
+}
+/* --------- Drop Down -------- */
+
+#main-nav  ul li ul{
+    position: absolute;
+    background: #232323;
+    width: 200px;
+    z-index: 2;
+    display: none;
+    top: 48px;
+
+}
+#main-nav  ul li{
+    position: relative}
+
+#main-nav  ul ul li{
+    padding: 10px 20px;;
+    position: relative
+}
+
+#main-nav  ul li ul a{
+    color: #fff;
+    display: block;
+    position: relative;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
+}
+
+#main-nav li ul ul{
+    position: absolute;
+    left: 100%;
+    top: 0
+}
+
+#main-nav li:hover > ul{
+    display: block
+}
+#main-nav  ul ul a:hover{
+    padding-left: 5px;
+
+}
+
+/*onscroll*/
+
+header.fixed{
+    background-color: rgb(238, 238, 238) !important;
+    position: fixed !important;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 60px;
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+
+header.fixed .logo{
+    padding: 19px 30px 6px;
+
+}
+
+.fixed #main-nav{
+    margin-top: 19px;
+}
+
+.fixed #btn-menu{
+    margin-top: 14px;
+}
+
+@media screen and (max-width: 991px) {
+    #btn-menu {
+        display: block;
+    }
+}
+
+/*******************************************************************
+          end header
+*********************************************************************/
+
+/*******************************************************************
+                       start services
+*********************************************************************/
+
+
+.block{
+    border-top: 2px solid #232323;
+    position: relative;
+    padding: 30px 0;
+
+}
+
+.block:after{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background: #232323;
+}
+
+.text-blck{
+
+}
+
+.follow-blck{
+    text-align: center
+}
+.follow-blck-border{
+    border-left: 2px solid #ededed;
+    border-right:  2px solid #ededed;
+    border-bottom: 2px solid #ededed;
+    margin-bottom: 30px;
+}
+
+
+.follow-blck .block-title h3{
+    font-size: 16px;
+
+}
+
+.follow-blck .social-links{
+    margin-bottom: 20px;
+}
+
+.block-title{
+    text-transform: uppercase
+}
+
+
+
+
+.services-items{
+    text-align: center
+;
+    margin-top: 40px;
+}
+
+.services-item{
+    position: relative;
+    border: 2px solid #EDEDED;
+    padding: 40px 10px;
+    min-height: 200px;
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    transition: 0.3s ease-in;
+
+}
+
+.services-item span{
+    color: #232323;
+    font-size: 30px;
+
+}
+
+.services-item p{
+    font-family: 'PT Mono', monospace ;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #737373;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.services-item:hover{
+    background: #232323;
+    color: #fff;
+}
+
+
+.services-item:hover p,.services-item:hover span{
+    color: #fff;
+}
+
+/*******************************************************************
+         end services
+*********************************************************************/
+
+/*******************************************************************
+         start advantages ( Product Page)
+*********************************************************************/
+.advantages li{
+    margin-bottom: 10px;
+}
+
+
+/*******************************************************************
+             start our masking functions
+*********************************************************************/
+
+.post .mask-item{
+    position: relative;
+    overflow: hidden
+}
+.post .mask-item .mask{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    -webkit-transform: translateY(110%);
+    -moz-transform: translateY(110%);
+    transform: translateY(110%);
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
+
+}
+
+.post .mask-item:hover .mask{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.post .mask-item .mask h4{
+    position: absolute;
+    top:30%;
+    left: 0;
+    right: 0;
+    text-transform: uppercase
+}
+
+
+.post.mask-item .mask a{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    display: inline-block;
+    font-size: 15px;
+    height: 35px;
+    width: 35px;
+    line-height: 38px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.9);
+
+}
+
+.post .mask-item .mask a:last-child{
+    left: 34%;
+
+}
+
+.post .mask-item .mask a{
+    -webkit-transition: 0.3s linear;
+    -moz-transition: 0.3s linear;
+    transition: 0.3s linear;
+}
+.post .mask-item .mask a:hover{
+    background: #63A69F;
+
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+    /* change duration value to whatever you like */
+
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+/*******************************************************************
+             end our portfolio
+*********************************************************************/
+
+
